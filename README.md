@@ -2,8 +2,8 @@
 
 ## Índice
 
-* [1. Preámbulo](#1-preámbulo)
-* [2. Resumen del proyecto](#2-resumen-del-proyecto)
+* [Definición del producto](#1-definición-del-producto)
+* [Historias de usuario](#2-historias-de-usuario)
 * [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
 * [4. Consideraciones generales](#4-consideraciones-generales)
 * [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
@@ -12,60 +12,69 @@
 * [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
 * [9. Checklist](#9-checklist)
 
-
-
-## 2. Resumen del proyecto
-
-En este proyecto **construirás una _página web_ para visualizar un
-_conjunto (set) de datos_** que se adecúe a lo que descubras que tu usuario
-necesita.
-
-Como entregable final tendrás una página web que permita a los usuarios
-**visualizar, filtrar, ordenar, etc.**.
-
-Te proponemos una serie de datos de diferentes _temáticas_ para que los
-explores y decidas con cuál te interesa trabajar. Cada _set_ de datos viene con
-información básica sobre los datos y su estructura, y una lista de las
-necesidades de los usuarios que proviene de una investigación (_research_)
-hecha por el equipo de Laboratoria.
-
-Una vez que elijas, diseña tu proyecto intentando ofrecerle la mejor experiencia
-posible para ayudarle a satisfacer sus necesidades.
-
-Estos son datos que te proponemos:
-
-* [Pokémon](src/data/pokemon/pokemon.json):
-  En este set encontrarás una lista con los 151 Pokémon de la región de Kanto, junto con sus respectivas estadísticas usadas en el juego
-  [Pokémon GO](http://pokemongolive.com).
-  - [Investigación con jugadores de Pokémon Go](src/data/pokemon/README.md)
-
-
-### Definición del producto
+## 1. Definición del producto
 
 contándonos cómo fue tu proceso de diseño y cómo crees que el producto resuelve
 el problema (o problemas) que tiene tu usuario.
 
-### Historias de usuario
+## 2. Historias de usuario
 
-Una vez que entiendas las necesidades de tus usuarios, escribe las [Historias
-de Usuario](https://es.wikipedia.org/wiki/Historias_de_usuario) que representen
-todo lo que el usuario necesita hacer/ver. Las **Historias de Usuario** deben
-ser el resultado de tu proceso de investigación o _research_ de tus usuarios.
+### Historias de Usuario 1 ### 
+"Yo, **como** jugador de Pokemon Go, **quiero** que me de una página de bienvenida **para** poder acceder al contenido de la página.
 
-Asegúrate de incluir la definición de terminado (_definition of done_) y los
-Criterios de Aceptación para cada una.
+#### Criterios de aceptación ####
+El usuario ingresa a la página y aparece un mensaje de bienvenida. El ingreso debe ser fácil desde cualquier dispositivo.
+A desarrollar: HTML, CSS, Responsive
 
-En la medida de lo posible, termina una historia de usuario antes de pasar
-a la siguiente (Cumple con Definición de Terminado + Criterios de Aceptación).
+#### Definición de terminado ####
+
+### Historias de Usuario 2 ### 
+"Yo, **como** visitante, **quiero** poder ver todos los pokemones, **para** conocerlos.
+
+#### Criterios de aceptación ####
+El usuario ingresa a la página desde el boton, vera los 151 pokemones con su foto y número. Esta visualización debe ser bien vista desde cualquier dispositivo.
+A desarrollar: HTML, CSS (estilos de la página), Responsive, DOM 
+
+#### Definición de terminado ####
+
+### Historias de Usuario 3 ### 
+"Yo, **como** jugador de Pokemon Go, **quiero** ordenar los pokemones de forma ascendente y descendente, **para** poder conocerlos.
+
+#### Criterios de aceptación ####
+El usuario debe ir al despliegue del menú "ordenar por" y seleccionar la pestaña "número", luego seleccionar si quiere verlos desde ascendente o descendente. Luego, vera los pokemones ordenados del 1 al 151 y del 151 al 1. Esta visualización debe ser bien vista desde cualquier dispositivo. 
+A desarrollar: HTML, CSS (estilos de la página), Responsive, DOM 
+
+#### Definición de terminado ####
+
+### Historias de Usuario 4 ### 
+"Yo, **como** jugador de Pokemon Go, **quiero** ordenar los pokemones por tipo, **para** poder verlos.
+
+#### Criterios de aceptación ####
+El usuario debe ir al despliegue del menú "ordenar por" y seleccionar la pestaña "tipos", luego seleccionar unos de los 16 tipos (ej.agua, fuego, etc). Luego, vera los pokemones según el tipo seleccionado. Esta visualización debe ser bien vista desde cualquier dispositivo. 
+A desarrollar: HTML, CSS (estilos de la página), Responsive, DOM 
+
+#### Definición de terminado ####
+
+### Historias de Usuario 5 ### 
+"Yo, **como** jugador de Pokemon Go, **quiero** ver los pokemones segun debilidad, **para** conocerlos más.
+
+#### Criterios de aceptación ####
+El usuario debe ir al despliegue del menú "ordenar por" y seleccionar la pestaña "debilidad", luego seleccionar unos de los 16 debilidades (ej.agua, fuego, etc). Luego, vera los pokemones según la debilidad seleccionada. Esta visualización debe ser bien vista desde cualquier dispositivo. 
+A desarrollar: HTML, CSS (estilos de la página), Responsive, DOM 
 
 ### Diseño de la Interfaz de Usuario
 
+#### Diagrama de flujo
+
+![diagramaDeFlujo](diagramaFlujo.jpg)
+
 #### Prototipo de baja fidelidad
 
-Durante tu trabajo deberás haber hecho e iterado bocetos (_sketches_) de tu
-solución usando papel y lápiz. Te recomendamos tomar fotos de todas las
-iteraciones que hagas, que las subas a tu repositorio y las menciones en tu
-`README.md`.
+![prototipo1](p1.jpg)
+
+![prototipo1](p2.jpg)
+
+![prototipo1](p3.jpg)
 
 #### Prototipo de alta fidelidad
 
