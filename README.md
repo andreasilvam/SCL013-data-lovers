@@ -4,13 +4,7 @@
 
 * [Definición del producto](#1-definición-del-producto)
 * [Historias de usuario](#2-historias-de-usuario)
-* [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
-* [4. Consideraciones generales](#4-consideraciones-generales)
-* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Parte adicional-opcional](#6-parte-adicional-opcional)
-* [7. Consideraciones técnicas](#7-consideraciones-técnicas)
-* [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
-* [9. Checklist](#9-checklist)
+* [Diseño de la Interfaz de Usuario](#3-Diseño-de-la-Interfaz-de-Usuario)
 
 ## 1. Definición del producto
 
@@ -62,7 +56,7 @@ A desarrollar: HTML, CSS (estilos de la página), Responsive, DOM
 El usuario debe ir al despliegue del menú "ordenar por" y seleccionar la pestaña "debilidad", luego seleccionar unos de los 16 debilidades (ej.agua, fuego, etc). Luego, vera los pokemones según la debilidad seleccionada. Esta visualización debe ser bien vista desde cualquier dispositivo. 
 A desarrollar: HTML, CSS (estilos de la página), Responsive, DOM 
 
-### Diseño de la Interfaz de Usuario
+## 3. Diseño de la Interfaz de Usuario
 
 #### Diagrama de flujo
 
