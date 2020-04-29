@@ -40,13 +40,8 @@ Estos son datos que te proponemos:
   - [Investigación con jugadores de Pokémon Go](src/data/pokemon/README.md)
 
 
-## Criterios de aceptación mínimos del proyecto
-
-Los criterios para considerar que has completado este proyecto son:
-
 ### Definición del producto
 
-Documenta brevemente tu trabajo en el archivo `README.md` de tu repositorio,
 contándonos cómo fue tu proceso de diseño y cómo crees que el producto resuelve
 el problema (o problemas) que tiene tu usuario.
 
