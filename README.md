@@ -91,12 +91,6 @@ mejoraste en tu propuesta final.
 
 ### Implementación de la Interfaz de Usuario (HTML/CSS/JS)
 
-Luego de diseñar tu interfaz de usuario deberás trabajar en su implementación.
-**No** es necesario que construyas la interfaz exactamente como la diseñaste.
-Tu tiempo de hacking es escaso, así que deberás priorizar
-
-Como mínimo, tu implementación debe:
-
 1. Mostrar la data en una interfaz: puede ser un card, una tabla, una lista,
    etc.
 2. Permitir al usuario interactuar para obtener la infomación que necesita.
@@ -119,18 +113,11 @@ en la sección de [Consideraciones técnicas](#srcdatajs).
 
 ### Primeros pasos
 
-Antes de empezar a escribir código, debes definir qué deberá hacer el producto
-en base al conocimiento que puedas obtener de tu usuario. Estas preguntas te
-pueden ayudar:
+definir qué deberá hacer el producto en base al conocimiento que puedas obtener de tu usuario.
 
 * ¿Quiénes son los principales usuarios de producto?
 * ¿Cuáles son los objetivos de estos usuarios en relación con el producto?
 * ¿Cuáles son los datos más relevantes que quieren ver en la interfaz y por qué?
 * ¿Cuándo utilizan o utilizarían el producto?
-* Toda tu investigación previa debe tener como resultado todas las Historias
-  de Usuario de tu proyecto.
-* No hagas los prototipos de alta fidelidad de todas tus Historias. Comienza
-  solamente por los que se necesiten para tu Sprint 1 (semana 1 de trabajo). Más
-  pistas en la guía de organización para el proyecto.
 
 
