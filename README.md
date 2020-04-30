@@ -60,7 +60,7 @@ A desarrollar: HTML, CSS (estilos de la página), Responsive, DOM
 
 #### Diagrama de flujo
 
-![diagramaDeFlujo](imagenes prototipados/diagramaFlujo.JPG)
+![diagramaDeFlujo](/prototipados/diagramaFlujo.JPG)
 
 #### Prototipo de baja fidelidad
 
