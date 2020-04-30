@@ -67,11 +67,11 @@ A desarrollar: HTML, CSS (estilos de la página), Responsive, DOM
 
 #### Prototipo de baja fidelidad
 
-![prototipo1](/prototipados/PBF1.JPG)
-![prototipo2](/prototipados/PBF2.JPG)
-![prototipo3](/prototipados/PBF3.JPG)
-![prototipo4](/prototipados/PBF4.JPG)
-![prototipo5](/prototipados/PBF5.JPG)
+![prototipoBF1](/prototipados/PBF1.JPG)
+![prototipoBF2](/prototipados/PBF2.JPG)
+![prototipoBF3](/prototipados/PBF3.JPG)
+![prototipoBF4](/prototipados/PBF4.JPG)
+![prototipoBF5](/prototipados/PBF5.JPG)
 
 #### Prototipo de alta fidelidad
 
