@@ -58,17 +58,20 @@ A desarrollar: HTML, CSS (estilos de la página), Responsive, DOM
 
 ## 3. Diseño de la Interfaz de Usuario
 
-#### Diagrama de flujo
+#### Diagrama de flujo y prototipo en papel y lápiz
 
 ![diagramaDeFlujo](/prototipados/diagramaFlujo.JPG)
+![prototipo1](/prototipados/P1.JPG)
+![prototipo2](/prototipados/P2.JPG)
+![prototipo3](/prototipados/P3.JPG)
 
 #### Prototipo de baja fidelidad
 
-![prototipo1](p1.jpg)
-
-![prototipo1](p2.jpg)
-
-![prototipo1](p3.jpg)
+![prototipo1](/prototipados/PBF1.JPG)
+![prototipo2](/prototipados/PBF2.JPG)
+![prototipo3](/prototipados/PBF3.JPG)
+![prototipo4](/prototipados/PBF4.JPG)
+![prototipo5](/prototipados/PBF5.JPG)
 
 #### Prototipo de alta fidelidad
 
