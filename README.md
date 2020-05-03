@@ -91,10 +91,10 @@ Aparece el listado de imagenes de todos los pokemones ordenados por numero. En l
 
 Luego de testar, recibir feedbacks de parte de distintos usuarios, compañeras y coachs, y analizar nuestro prototipo de baja, diseñamos nuestro Interfaz de usuario o prototipo de alta fidelidad en Figma y lo exportamos a Zeplin.
 
-Prototipo de alta fidelidad en Figma
+### Prototipo de alta fidelidad en Figma
 [Ver](https://www.figma.com/proto/Z6L6zbXb7gPZTlqnzQcUTO/Untitled?node-id=37%3A5&scaling=min-zoom)
 
-Exportación del proyecto de Figma a Zeplin
+### Exportación del proyecto de Figma a Zeplin
 [Ver]()
 
 #### Testeos de usabilidad
