@@ -1,3 +1,4 @@
+# POKEMANÍA
 # Data Lovers
 
 ## Índice
@@ -8,8 +9,14 @@
 
 ## 1. Definición del producto
 
+Pokemanía es una página web dirigida a jugadores nivel intermedio que quieren conocer a los 151 pokemones de la primera generación, de la región de Kanto. Nuestra página comienza con un mensaje de bienvenida invitando al usuario a acceder mediante un botón. Luego de acceder estamos en la página principal, la cual muestra en su lado izquierdo un menú para filtrar la busqueda de los pokemones por Nuúmero, Tipos y Debilidad. Tambien en esta página, se muestra una galeria de imagenes de todos los pokemones, junto a su número y nombre y a cada uno de ellos se podrá acceder a una ficha informativa donde se detalla su altura, peso, tipo, evolución, debilidades, etc. 
 contándonos cómo fue tu proceso de diseño y cómo crees que el producto resuelve
 el problema (o problemas) que tiene tu usuario.
+
+* ¿Quiénes son los principales usuarios de producto? Jugadores intermedios de Pokemón Go
+* ¿Cuáles son los objetivos de estos usuarios en relación con el producto? Tener más conocimiento sobre Pokemon Go y jugar con mayor información.
+* ¿Cuáles son los datos más relevantes que quieren ver en la interfaz y por qué? Las fichas con la información necesaria en cada pokemon. Además dentro de cada ficha se puede encontrar información de otros pokemones, logrando ver los vinculos que hay entre ellos como por ejemplo en sus evoluciones.
+* ¿Cuándo utilizan o utilizarían el producto? 
 
 ## 2. Historias de usuario
 
@@ -75,18 +82,10 @@ A desarrollar: HTML, CSS (estilos de la página), Responsive, DOM
 
 #### Prototipo de alta fidelidad
 
-Lo siguiente es diseñar tu Interfaz de Usuario (UI por sus siglas en inglés -
-_User Interface_). Para eso debes aprender a utilizar alguna herramienta de
-diseño visual. Nosotros te recomendamos [Figma](https://www.figma.com/) que es
-una herramienta que funciona en el navegador y, además, puedes crear una cuenta
-gratis. Sin embargo, eres libre de utilizar otros editores gráficos como
-Illustrator, Photoshop, PowerPoint, Keynote, etc. Recuerda utilizar la
-[identidad gráfica](https://drive.google.com/open?id=1eeWFqrWpy-OYOH4EHDckFGunyrm9iNeE)
-correspondiente a cada set de datos que elijas.
+Luego de testar, recibir feedbacks de parte de distintos usuarios, compañeras y coachs ( y analizar nuestro prototipo de baja, diseñamos nuestro Interfaz de usuario o prototipo de alta fidelidad en Figma y lo exportamos a Zeplin.
 
-El diseño debe representar el _ideal_ de tu solución. Digamos que es lo que
-desearías implementar si tuvieras tiempo ilimitado para trabajar. Además, tu
-diseño debe seguir los fundamentos de _visual design_.
+Prototipo de alta fidelidad en Figma
+[Ver](https://www.figma.com/proto/Z6L6zbXb7gPZTlqnzQcUTO/Untitled?node-id=37%3A5&scaling=min-zoom)
 
 #### Testeos de usabilidad
 
