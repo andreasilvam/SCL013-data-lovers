@@ -1,25 +1,13 @@
-/*import { example } from './data.js';
-// import data from './data/lol/lol.js';
-import data from './data/pokemon/pokemon.js';
-// import data from './data/rickandmorty/rickandmorty.js';
 
-console.log(example, data);*/
+document.getElementById("paginaUno").style.display = "block";
+      //Llamamos al boton de ingresar por el id
+     let botonIngreso = document.getElementById("btn");
 
-    import pokemon from './data/pokemon/pokemon.js';
-        
-     //console.log(pokemonData)
+     botonIngreso.addEventListener('click', () => {
+       document.getElementById("paginaUno").style.display = "none"; //escondemos
+       //mostramos la segunda pagina que está en un div con id paginaDos
+       document.getElementById("paginaDos").style.display = "block"; //mostramos
+     });
 
-     const data = pokemon.data;
-
-     const dataArreglo = Object.values(data);
-     console.log(pokemonData);
-
-     for(let i=0; i < dataArreglo.lenght; i++){
-         if (data[i].type.includes("poison") === true)
-     console.log(dataArreglo[i].name)
-}
-
-/*const root = document.getElementById("root");
-for (let i=0; i < dataArreglo.lenght; i++){
-root.innerHTML += "<p>Nombre: " + dataArreglo[i].name + "<p>"
-}*/
+     //Llamamos al objeto para que arroje la data
+    import pokemonData from './data/pokemon/pokemon.js';
