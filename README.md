@@ -94,8 +94,8 @@ Luego de testar, recibir feedbacks de parte de distintos usuarios, compañeras y
 Prototipo de alta fidelidad en Figma
 [Ver](https://www.figma.com/proto/Z6L6zbXb7gPZTlqnzQcUTO/Untitled?node-id=37%3A5&scaling=min-zoom)
 
-Prototipo de alta fidelidad en Figma
-[Ver](https://www.figma.com/proto/Z6L6zbXb7gPZTlqnzQcUTO/Untitled?node-id=37%3A5&scaling=min-zoom)
+Exportación del proyecto de Figma a Zeplin
+[Ver]()
 
 #### Testeos de usabilidad
 
