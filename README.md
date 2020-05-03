@@ -9,14 +9,12 @@
 
 ## 1. Definición del producto
 
-Pokemanía es una página web dirigida a jugadores nivel intermedio que quieren conocer a los 151 pokemones de la primera generación, de la región de Kanto. Nuestra página comienza con un mensaje de bienvenida invitando al usuario a acceder mediante un botón. Luego de acceder estamos en la página principal, la cual muestra en su lado izquierdo un menú para filtrar la busqueda de los pokemones por Nuúmero, Tipos y Debilidad. Tambien en esta página, se muestra una galeria de imagenes de todos los pokemones, junto a su número y nombre y a cada uno de ellos se podrá acceder a una ficha informativa donde se detalla su altura, peso, tipo, evolución, debilidades, etc. 
-contándonos cómo fue tu proceso de diseño y cómo crees que el producto resuelve
-el problema (o problemas) que tiene tu usuario.
+Pokemanía es una página web dirigida a jugadores nivel intermedio que quieren conocer a los 151 pokemones de la primera generación, de la región de Kanto. Nuestra página comienza con un mensaje de bienvenida invitando al usuario a acceder mediante un botón. Luego estamos en la página principal, la cual muestra en su lado izquierdo un menú para filtrar la busqueda de los pokemones por Número, Tipos y Debilidad. Tambien en esta página, se muestra una galeria de imagenes de todos los pokemones, junto a su nombre y número, y a cada uno de ellos se podrá acceder a una ficha informativa donde se detalla su altura, peso, tipo, evolución, debilidades, etc. 
 
 * ¿Quiénes son los principales usuarios de producto? Jugadores intermedios de Pokemón Go
 * ¿Cuáles son los objetivos de estos usuarios en relación con el producto? Tener más conocimiento sobre Pokemon Go y jugar con mayor información.
 * ¿Cuáles son los datos más relevantes que quieren ver en la interfaz y por qué? Las fichas con la información necesaria en cada pokemon. Además dentro de cada ficha se puede encontrar información de otros pokemones, logrando ver los vinculos que hay entre ellos como por ejemplo en sus evoluciones.
-* ¿Cuándo utilizan o utilizarían el producto? 
+* ¿Cuándo utilizan o utilizarían el producto? Cuando necesiten batallar contra otro pokemon en el juego y/o para estudiar mas a cada pokemon.
 
 ## 2. Historias de usuario
 
@@ -28,6 +26,9 @@ El usuario ingresa a la página y aparece un mensaje de bienvenida. El ingreso d
 A desarrollar: HTML, CSS, Responsive
 
 #### Definición de terminado ####
+Al ingresar se muestra el mensaje de bienvenida y el usuario hará click en Ingresar para conocer a los pokemones.
+El código cumple con la guía de estilos acordada.
+El código esta en el repositorio.
 
 ### Historias de Usuario 2 ### 
 "Yo, **como** visitante, **quiero** poder ver todos los pokemones, **para** conocerlos.
@@ -37,6 +38,7 @@ El usuario ingresa a la página desde el boton, vera los 151 pokemones con su fo
 A desarrollar: HTML, CSS (estilos de la página), Responsive, DOM 
 
 #### Definición de terminado ####
+Luego de ingresar, aparece un listado con imagenes de todos los pokemones ordenados por numero. El usuario al hacer click en una imagen podrá conocer la ficha técnica o descripción del pokemon.
 
 ### Historias de Usuario 3 ### 
 "Yo, **como** jugador de Pokemon Go, **quiero** ordenar los pokemones de forma ascendente y descendente, **para** poder conocerlos.
@@ -46,6 +48,7 @@ El usuario debe ir al despliegue del menú "ordenar por" y seleccionar la pesta�
 A desarrollar: HTML, CSS (estilos de la página), Responsive, DOM 
 
 #### Definición de terminado ####
+Aparece el listado de imagenes de todos los pokemones ordenados por numero. En la parte izquierda de la pagina habrá un "select" donde aparece la opción de ordenar el listado de pokemones por números, que puede ser del 1 al 151 o del 151 al 1. El usuario al hacer click en una imagen podrá conocer la ficha técnica o descripción del pokemon.
 
 ### Historias de Usuario 4 ### 
 "Yo, **como** jugador de Pokemon Go, **quiero** ordenar los pokemones por tipo, **para** poder verlos.
@@ -55,6 +58,7 @@ El usuario debe ir al despliegue del menú "ordenar por" y seleccionar la pesta�
 A desarrollar: HTML, CSS (estilos de la página), Responsive, DOM 
 
 #### Definición de terminado ####
+Aparece el listado de imagenes de todos los pokemones ordenados por numero. En la parte izquierda de la pagina habrá un "select" donde aparece la opción de ordenar el listado de pokemones por Tipos, y dentro de este, se desplegarán las 16 opciones de tipo a seleccionar. El usuario debe seleccionar la categoria que quiere al hacer click. Al hacer click va a aparecer los pokemones del tipo seleccionado.El usuario al hacer click en una imagen podrá conocer la ficha técnica o descripción del pokemon.
 
 ### Historias de Usuario 5 ### 
 "Yo, **como** jugador de Pokemon Go, **quiero** ver los pokemones segun debilidad, **para** conocerlos más.
@@ -62,6 +66,9 @@ A desarrollar: HTML, CSS (estilos de la página), Responsive, DOM
 #### Criterios de aceptación ####
 El usuario debe ir al despliegue del menú "ordenar por" y seleccionar la pestaña "debilidad", luego seleccionar unos de los 16 debilidades (ej.agua, fuego, etc). Luego, vera los pokemones según la debilidad seleccionada. Esta visualización debe ser bien vista desde cualquier dispositivo. 
 A desarrollar: HTML, CSS (estilos de la página), Responsive, DOM 
+
+#### Definición de terminado ####
+Aparece el listado de imagenes de todos los pokemones ordenados por numero. En la parte izquierda de la pagina habrá un "select" donde aparece la opción de ordenar el listado de pokemones por Debilidad, y dentro de este, se desplegarán las 16 opciones de debilidad a seleccionar. El usuario debe seleccionar la categoria que quiere al hacer click. Al hacer click va a aparecer los pokemones del tipo seleccionado. El usuario al hacer click en una imagen podrá conocer la ficha técnica o descripción del pokemon.
 
 ## 3. Diseño de la Interfaz de Usuario
 
@@ -82,7 +89,10 @@ A desarrollar: HTML, CSS (estilos de la página), Responsive, DOM
 
 #### Prototipo de alta fidelidad
 
-Luego de testar, recibir feedbacks de parte de distintos usuarios, compañeras y coachs ( y analizar nuestro prototipo de baja, diseñamos nuestro Interfaz de usuario o prototipo de alta fidelidad en Figma y lo exportamos a Zeplin.
+Luego de testar, recibir feedbacks de parte de distintos usuarios, compañeras y coachs, y analizar nuestro prototipo de baja, diseñamos nuestro Interfaz de usuario o prototipo de alta fidelidad en Figma y lo exportamos a Zeplin.
+
+Prototipo de alta fidelidad en Figma
+[Ver](https://www.figma.com/proto/Z6L6zbXb7gPZTlqnzQcUTO/Untitled?node-id=37%3A5&scaling=min-zoom)
 
 Prototipo de alta fidelidad en Figma
 [Ver](https://www.figma.com/proto/Z6L6zbXb7gPZTlqnzQcUTO/Untitled?node-id=37%3A5&scaling=min-zoom)
@@ -114,15 +124,5 @@ Tus _pruebas unitarias_ deben dar una cobertura del 70% de _statements_
 (_ramas_) del archivo `src/data.js` que contenga tus funciones y está detallado
 en la sección de [Consideraciones técnicas](#srcdatajs).
 
-## 8. Pistas, tips y lecturas complementarias
-
-### Primeros pasos
-
-definir qué deberá hacer el producto en base al conocimiento que puedas obtener de tu usuario.
-
-* ¿Quiénes son los principales usuarios de producto?
-* ¿Cuáles son los objetivos de estos usuarios en relación con el producto?
-* ¿Cuáles son los datos más relevantes que quieren ver en la interfaz y por qué?
-* ¿Cuándo utilizan o utilizarían el producto?
 
 
