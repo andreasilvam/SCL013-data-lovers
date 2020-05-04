@@ -95,7 +95,7 @@ Luego de testar, recibir feedbacks de parte de distintos usuarios, compañeras y
 [Ver](https://www.figma.com/proto/Z6L6zbXb7gPZTlqnzQcUTO/Untitled?node-id=37%3A5&scaling=min-zoom)
 
 * Exportación del proyecto de Figma a Zeplin
-[Ver]()
+[Ver](https://zpl.io/aB0kdeQ)
 
 #### Testeos de usabilidad
 
