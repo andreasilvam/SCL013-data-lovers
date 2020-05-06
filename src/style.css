@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
   margin: 0;
   padding: 0;
@@ -246,3 +247,130 @@ h3{
 @media (min-width: 981px){
 
 }
+=======
+body{
+  margin: 0;
+  padding:0;
+  background:url(Img/fondo.png);
+  background-size: cover;
+  font-family: "Open Sans";
+  font-size: 1em;
+  text-align: center;
+}
+
+.banner {
+  position: absolute;
+  width: 1374px;
+  height: 100px;
+  left: calc(50% - 1400px/2);
+  top: 0%;
+
+  background: rgba(255, 255, 255, 0.75);
+  opacity: 0.8;
+}
+
+.logo{
+  position: absolute;
+  width: 470px;
+height: 100px;
+left: 440px;;
+top: 0px;
+}
+
+.login-box {
+  width: 400px;
+  height: 350px;
+  top: 55%;
+  left: 50%;
+  position:absolute;
+  transform: translate(-50%, -50%);
+  background: #FFFFFF;
+  border-radius: 50px;
+}
+
+.avatar {
+  position: absolute;
+  width: 85px;
+  height: 85px;
+  left: 17px;
+  top: 7px;
+}
+
+h1{
+  position: absolute;
+  width: 340px;
+  height: 274px;
+  left: calc(50% - 343px/2 - 0.5px);
+  top: calc(55% - 274px/2 - 5px);
+
+  font-family: Alfa Slab One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 30px;
+
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: #1B1B1B;
+}
+
+h2{
+  position: absolute;
+  width: 343px;
+  height: 274px;
+  left: calc(50% - 343px/2 - 0.5px);
+  top: calc(90% - 274px/2 - 5px);
+
+  font-family: Alfa Slab One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 30px;
+
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: #1B1B1B;
+}
+
+#btn{
+  position: absolute;
+  width: 150px;
+  height: 30px;
+  left: 600px;
+  top: calc(90% - 274px/2 - 5px);
+  font-family: Alfa Slab One;
+  color:#0062C2;
+  border: 2px solid rgb(251, 255, 0);
+  background: #E5E5E5;
+  background-blend-mode: darken;
+  border: 1px solid #555555;
+  box-sizing: border-box;
+}
+
+.piedepagina{
+  position: absolute;
+  left: 450px;
+  top: 620px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  color: #898989;
+}
+
+.tipo{
+  position: absolute;
+width: 214px;
+height: 85px;
+left: 0px;
+top: 85px;
+
+}
+>>>>>>> b125b388e0fba8836d8af8f100eb92054c9932ca

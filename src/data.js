@@ -13,7 +13,6 @@ export const filtered = (basePokemon,filterType) => {
   return result;
 };
 
-
 // Función buscar por nombre de pokémon
 export const nameSearch = (basePokemon,finalName) => {
   const searched = basePokemon.filter((element) => {
