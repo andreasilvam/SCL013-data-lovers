@@ -26,7 +26,7 @@ El usuario ingresa a la página y aparece un mensaje de bienvenida. El ingreso d
 A desarrollar: HTML, CSS, Responsive
 
 #### Definición de terminado ####
-Al ingresar se muestra el mensaje de bienvenida y el usuario hará click en Ingresar para conocer a los pokemones.
+Al ingresar se muestra el mensaje de bienvenida y el usuario hará click en Ingresar para conocer a los pokemones o ver los que me faltan.
 El código cumple con la guía de estilos acordada.
 El código esta en el repositorio.
 
