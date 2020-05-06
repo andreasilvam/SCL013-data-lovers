@@ -1,12 +1,88 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>Pokemania</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One:regular" rel="stylesheet" />
+</head>
+<body>
+  <div class="all">
+  <!-- Cabecera de la página, acá debe de ir el banner de pokenmania y de la pokebola -->
+  <!--<div id="root"> </div>-->
+  <div class="banner"></div>
+  <img class="logo" src="Img/logo.png"> </img>
+  <!--  <caja de tecto de inicio que se le dará estilo en css-->
+  <!-- primera pagina -->
+  <div id="firstPage">
+    <div class="login-box" id="boxlogin"></div>
+    <img class="avatar" src="Img/PB.png">
+    <!--  <img class="fondo" src="Img/fondo.png"-->
+    <div id="welcome">
+      <h1>Bienvenido a la base de datos Pokemon GO de la primera generación, en la región de Kanto. </h1>
+      <h2>Descúbrela!</h2>
+      <button class=btn id="enterbutton">Ingresar</button>
+    </div>
+  </div>
+  <!-- segunda página -->
+  <div id= "menuprincipal" >
+    <h3>Descúbrela!</h3>
+
+  <section id="seleccinadores">
+    <!--momentaneo-->
+    <select id="posicion">
+      <option selected disabled>Ordenar</option>
+      <option>Ascendente</option>
+      <option>Descendiente</option>
+    </select>
+
+    <select id="tipo">
+      <option selected disabled>Tipos</option>
+      <option value="Fire">Fuego</option>
+      <option value="Water">Agua</option>
+      <option value="Grass">Planta</option>
+      <option value="Electric">Eleéctrico</option>
+      <option value="Ice">Hielo</option>
+      <option value="Fighting">Lucha</option>
+      <option value="Poison">Veneno</option>
+      <option value="Ground">Tierra</option>
+      <option value="Flying">Volador</option>
+      <option value="Psychic">Psíquico</option>
+      <option value="Bug">Bicho</option>
+      <option value="Rock">Roca</option>
+      <option value="Ghost">Fantasma</option>
+      <option value="Dragon">Dragón</option>
+      <option value="Dark">Siniestro</option>
+      <option value="Steel">Acero</option>
+      <option value="Fairy">Hada</option>
+    </select>
+
+  </section>
+<!--caja de texto: buscar por nombre de pokémon-->
+<div id="searchingBox">
+  <input type="text" id="search" placeholder="Nombre de Pokémon"></input>
+  <button id="okBtn">Ok</button>
+</div>
+</div>
+</div>
+  <div id="root"></div>
+  <footer class="piedepagina">
+    Andrea Silva - Eiliana Aguilar .Copyright - Todo los derechos reservados
+  </footer>
+  <script src="main.js" type="module"></script>
+  <script src="data.js" type="module"></script>
+</body>
 </html>
+  <!--caja de texto: buscar por nombre de pokémon
+  <div class="col-2" id="searchingBox">
+    <input type="text" id="search" placeholder="Nombre de Pokémon"></input>
+    <button class="col-2" id="okBtn">Ok</button>
+  </div>
+
+    <script src="main.js" type="module"></script>
+    <footer class="piedepagina">Andrea Silva - Eiliana Aguilar. Copyright - Todo los derechos reservados</footer>
+
+</body>
+</html>-->
