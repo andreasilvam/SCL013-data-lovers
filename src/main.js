@@ -1,19 +1,18 @@
 //solo para llamar la data al pagina de main
 import basePokemon from './data/pokemon/pokemon.js';
 // importando las funciones desde data.js
-import { filterPosition, filterType, filterWeak } from './data.js'
-////convirtiendo el objeto pokemon a un array 
+import { filterPosition, filterType, filterWeak, nameSearch} from './data.js'
+////convirtiendo el objeto pokemon a un array
 const dataPokemon = basePokemon.pokemon;
 //console.log (dataPokemon)
-document.getElementById("enterbutton").addEventListener("click", enterbtn);
+document.getElementById("enterButton").addEventListener("click", enterbtn);
 //llamando el id del botón y cuando escuche el evento ejecute la función
 //creando la función del boton enviar
 function enterbtn() {
-  document.getElementById("firstPage").style.display = "none"; //esconder 
-  document.getElementById("menuprincipal").style.display = "block"; //motrar
+  document.getElementById("pageOne").style.display = "none"; //esconder
+  document.getElementById("pageTwo").style.display = "block"; //motrar
   document.getElementById("root").style.display = "block";//mostrar
 }
-
 
 ///////imprimiendo los personajes en la segunda página luego del evento click ////
 
@@ -24,7 +23,7 @@ for (let i = 0; i < dataPokemon.length; i++) {
   // variable que almacena la data recorrida
   let pokemones = dataPokemon[i]
   //creando una variable que contiene los valores a imprimir
-  let imprimir = `<section id="tarjetas"><section id="letras"><p>Nombre ${pokemones.name}<p><p>Numero${pokemones.num}<p></section><img src=${pokemones.img} class=foto></section>`
+  let imprimir = `<section id="tarjetas"><p><img src=${pokemones.img} class=foto><p>${pokemones.num}.${pokemones.name}<p></section></section>`
   //se imprime llamando a la nueva variable según lo especificado en la variable anterior
   container.innerHTML += `<p>${imprimir}<p>`
 }
@@ -42,17 +41,15 @@ weakUser.addEventListener("change", () => {
   container.innerHTML = "";
   //variable que almcena la función exportada desde data.js con sus parámetros
   let positionWeak = filterWeak(dataPokemon, 'weaknesses', selecetWeak);
-  //console.log("ver", positionWeak);
-
+ //for que recorrerá el largo de la data
   for (let i = 0; i < positionWeak.length; i++) {
     //variable que me almacena el atriburo debilidad y todo lo que contiene adentro  de (weaknesses)
     let dataWeak = positionWeak[i];
     //variable que contiene los valores a imprimir
-    let printWeak = `<section id="tarjetas"><p>Nombre ${dataWeak.name}<p><p>Numero ${dataWeak.num}<p><img src=${dataWeak.img} class=foto></section>`
+    let printWeak = `<section id="tarjetas"><p><img src=${dataWeak.img} class=foto><p>${dataWeak.num}.${dataWeak.name}</section>`
     //se imprime llamando a la nueva variable según lo especificado en la variable anterior
     container.innerHTML += `<p>${printWeak}<p>`
   }
-
 });
 
 
@@ -66,14 +63,14 @@ typeUser.addEventListener("change", () => {
   let selectType = typeUser.options[typeUser.selectedIndex].value
   // se llama a la constante que donde se imprime en el html y se declara vacia para que limpie la página
   container.innerHTML = "";
-  //variable que almcena la función filtar por tipo exportada desde data.js con sus parámetros
+  //variable que almacena la función filtar por tipo exportada desde data.js con sus parámetros
   let positionType = filterType(dataPokemon, 'type', selectType);
-
+//for que recorrerá el largo de la data
   for (let i = 0; i < positionType.length; i++) {
     //variable que me almacena el recorrido el valor del recorrido de la debilidades y todo lo que contiene adentro  de (type)
     let newPosition = positionType[i];
     //variable que contiene los valores a imprimir
-    let prinType = `<section id="tarjetas"><p>Nombre ${newPosition.name}<p><p>Numero ${newPosition.num}<p><img src=${newPosition.img} class=foto></section>`
+    let prinType = `<section id="tarjetas"><p> ${newPosition.name}<p><p> ${newPosition.num}<p><img src=${newPosition.img} class=foto></section>`
     //se imprime llamando a la nueva variable según lo especificado en la variable anterior
     container.innerHTML += `<p>${prinType}<p>`
   }
@@ -86,14 +83,14 @@ typeUser.addEventListener("change", () => {
 const orderPosition = document.getElementById("orderPosition");
 //llamando la constante para que cuando escuche el evento ejecute la función
 orderPosition.addEventListener("change", () => {
-  //variable que alamacena el valor de la opción seleccionada por el usuario
+  //variable que almacena el valor de la opción seleccionada por el usuario
   let selectPosition = orderPosition.options[orderPosition.selectedIndex].value
   // se llama a la constante que donde se imprime en el html y se declara vacia para que limpie la página
   container.innerHTML = "";
   //console.log (selectPosition)
-  //variable que almcena la función filtrar de manera ascendete y descendente exportada desde data.js con sus parámetros
+  //variable que almacena la función filtrar de manera ascendete y descendente exportada desde data.js con sus parámetros
   let posicionFilter = filterPosition(dataPokemon, selectPosition)
-  //console.log (posicionFilter)
+  //for que recorrerá el largo de la data
   for (let i = 0; i < posicionFilter.length; i++) {
     //variable que me almacena el recorrido el valor del recorrido hecho por el for
     let dataFilter = posicionFilter[i]
@@ -105,26 +102,24 @@ orderPosition.addEventListener("change", () => {
 });
 
 
-
-
-/*creando la función filtar por debilidad
-const debilidadUser = document.getElementById("weak");
-//let debilidad = "";
-let imprimirDebilidad="";
-debilidadUser.addEventListener("change", () => {
-  let selecetUser = debilidadUser.options[debilidadUser.selectedIndex].value; // variable que me almacename el valor de la opción  que escogio el usuario
-  //console.log("ver", selecetUser);
-  for (let i = 0; i < dataPokemon.length; i++) {
-    let dataWeak = dataPokemon[i].weaknesses; //variable que me almacena el atriburo debilidad y todo lo que contiene adentro  de (weaknesses)
-    //console.log ("prue", nombrePokemon)
-    for (let a = 0; a < dataWeak.length; a++) {
-      //console.log("debilidad",dataWeak[a]); //probando si entra en las debilidades
-      if ((dataWeak[a]) === selecetUser) {
-        clean
-        //console.log("resultado", dataPokemon[i].num);
-        imprimirDebilidad = `<section id="tarjetas"><p>Nombre${dataPokemon[i].name}.<p>${dataPokemon[i].num}<p><img src=${dataPokemon[i].img} class=foto></section>`
-        container.innerHTML += `<p>${imprimirDebilidad}<p>`
-      }
-    }
+// Función buscar por nombre de pokémon
+//llamo al boton con el id para que cuando escuche el evento ejecute la función
+document.getElementById('okBtn').addEventListener('click', () => {
+  // se llama a la constante que donde se imprime en el html y se declara vacia para que limpie la página
+  document.getElementById('root').innerHTML = '';
+  //variable que almacena el valor el nombre del pokemon escrito por el usuario
+  const name = document.getElementById('search').value;
+  //constante que primero (charAt) obtiene, con el nombre, al personaje en la cadena + tomo el nombre en array
+  const finalName = name.charAt().toUpperCase() + name.slice(1).toLowerCase();
+  //variable que almacena la función buscar por nombre de pokemón exportada desde data.js con sus parámetros
+  let chosenName = (nameSearch(dataPokemon,finalName));
+  //for que recorrerá el largo de la data
+  for (let i = 0; i < chosenName.length; i++) {
+    //variable que me almacena el valor del recorrido hecho por el for
+    let dataName = chosenName[i]
+    //variable que contiene los valores a imprimir
+    let printName = `<section id="tarjetas"><p>Nombre ${dataName.name}<p><p>Numero ${dataName.num}<p><img src=${dataName.img} class=foto></section>`
+    //se imprime llamando a la nueva variable según lo especificado en la variable anterior
+    container.innerHTML += `<p>${printName}<p>`
   }
-})*/
+});

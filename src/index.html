@@ -4,86 +4,92 @@
 <head>
   <meta charset="utf-8">
   <title>Pokemania</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One:regular" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic" rel="stylesheet" />
 </head>
 
 <body>
-  <!-- Cabecera de la página, acá debe de ir el banner de pokenmania y de la pokebola -->
-  <div id="root"> </div>
-  <div class="banner"></div>
-  <img class="logo" src="Img/logo-pokemon-andre.png"> </img>
-  <!--  <caja de tecto de inicio que se le dará estilo en css-->
+
+  <header class="banner"></header>
+  <img class="logo" src="Img/logo.png">
+  <img class="avatar" src="Img/PB.png">
 
   <!-- primera pagina -->
-
-  <div id="firstPage">
+  <div id="pageOne">
     <div class="login-box" id="boxlogin"></div>
-
-    <img class="avatar" src="Img/PB.png">
-    <!--  <img class="fondo" src="Img/fondo.png"-->
-
-    <div id="welcome">
-      <h1>Bienvenido a la base de datos Pokemon GO de la primera generación, en la región de Kanto. </h1>
-      <h2>Descúbrela!</h2>
-      <button class=btn id="enterbutton">Ingresar</button>
-    </div>
+    <h1>Bienvenido a la base de datos Pokemon GO de la primera generación, en la región de Kanto. </h1>
+    <h2>Descúbrela!</h2>
+    <button class="btn" id="enterButton">Ingresar</button>
   </div>
 
-
   <!-- segunda página -->
-  <div id= "menuprincipal" >
-  <section id="seleccinadores">
+  <div id= "pageTwo" >
+    <aside id="selections">
 
-    <select id="weak">
-      <option selected disabled>Selccione debilidades</option>
-      <option value="Fire">Fuego</option>
-      <option value="Water">Agua</option>
-      <option value="Grass">Planta</option>
-      <option value="Electric">Eleéctrico</option>
-      <option value="Ice">Hielo</option>
-      <option value="Fighting">Lucha</option>
-      <option value="Poison">Veneno</option>
-      <option value="Ground">Tierra</option>
-      <option value="Flying">Volador</option>
-      <option value="Psychic">Psíquico</option>
-      <option value="Bug">Bicho</option>
-      <option value="Rock">Roca</option>
-      <option value="Ghost">Fantasma</option>
-      <option value="Dragon">Dragón</option>
-      <option value="Dark">Siniestro</option>
-      <option value="Steel">Acero</option>
-      <option value="Fairy">Hada</option>
-    </select>
-<br> <!--momentaneo-->
-<select id="type">
-  <option selected disabled>Selccione type</option>
-  <option value="Fire">Fuego</option>
-  <option value="Water">Agua</option>
-  <option value="Grass">Planta</option>
-  <option value="Electric">Eleéctrico</option>
-  <option value="Ice">Hielo</option>
-  <option value="Fighting">Lucha</option>
-  <option value="Poison">Veneno</option>
-  <option value="Ground">Tierra</option>
-  <option value="Flying">Volador</option>
-  <option value="Psychic">Psíquico</option>
-  <option value="Bug">Bicho</option>
-  <option value="Rock">Roca</option>
-  <option value="Ghost">Fantasma</option>
-  <option value="Dragon">Dragón</option>
-  <option value="Dark">Siniestro</option>
-  <option value="Steel">Acero</option>
-  <option value="Fairy">Hada</option>
-</select>
+      <!--filtro: buscar por tipo -->
+      <select id="type">
+        <option selected disabled>Tipos</option>
+        <option value="Fire">Fuego</option>
+        <option value="Water">Agua</option>
+        <option value="Grass">Planta</option>
+        <option value="Electric">Eléctrico</option>
+        <option value="Ice">Hielo</option>
+        <option value="Fighting">Lucha</option>
+        <option value="Poison">Veneno</option>
+        <option value="Ground">Tierra</option>
+        <option value="Flying">Volador</option>
+        <option value="Psychic">Psíquico</option>
+        <option value="Bug">Bicho</option>
+        <option value="Rock">Roca</option>
+        <option value="Ghost">Fantasma</option>
+        <option value="Dragon">Dragón</option>
+        <option value="Dark">Siniestro</option>
+        <option value="Steel">Acero</option>
+        <option value="Fairy">Hada</option>
+      </select>
 
-    <select id="orderPosition">
-      <option selected disabled>Ordenar</option>
-      <option>Ascendente</option>
-      <option>Descendiente</option>
-    </select>
+      <!--filtro: buscar por debilidad -->
+      <select id="weak">
+        <option selected disabled>Debilidades</option>
+        <option value="Fire">Fuego</option>
+        <option value="Water">Agua</option>
+        <option value="Grass">Planta</option>
+        <option value="Electric">Eléctrico</option>
+        <option value="Ice">Hielo</option>
+        <option value="Fighting">Lucha</option>
+        <option value="Poison">Veneno</option>
+        <option value="Ground">Tierra</option>
+        <option value="Flying">Volador</option>
+        <option value="Psychic">Psíquico</option>
+        <option value="Bug">Bicho</option>
+        <option value="Rock">Roca</option>
+        <option value="Ghost">Fantasma</option>
+        <option value="Dragon">Dragón</option>
+        <option value="Dark">Siniestro</option>
+        <option value="Steel">Acero</option>
+        <option value="Fairy">Hada</option>
+      </select>
 
-  </section>
-</div>
+      <!--filtro: buscar por orden alfabeto -->
+      <select id="orderPosition">
+        <option selected disabled>Ordenar</option>
+        <option>Ascendente</option>
+        <option>Descendiente</option>
+      </select>
+    </aside>
+
+    <!--caja de texto: buscar por nombre de pokémon -->
+    <div class="col-2" id="searchingBox">
+      <input type="text" id="search" placeholder="Nombre de Pokémon">
+      <button class="col-2" id="okBtn">Ok</button>
+    </div>
+
+    <script src="main.js" type="module"></script>
+    <footer class="piedepagina">Andrea Silva - Eiliana Aguilar. Copyright - Todo los derechos reservados</footer>
+
+  </div>
   <div id="root"></div>
   <footer class="piedepagina">
     Andrea Silva - Eiliana Aguilar .Copyright - Todo los derechos reservados

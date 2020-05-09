@@ -10,18 +10,18 @@ body{
     background-size: cover;
     /*determina si la imagen será fija dentro de la pantalla o se desplazará junto al bloque contenedor.*/
     background-attachment: fixed;
-
   }
 
 .banner {
   position: absolute;
-  width: 1440px;
+  width: 14400px;
   height: 100px;
   left: calc(50% - 1400px/2);
   top: 0%;
   background: rgba(255, 255, 255, 0.75);
   opacity: 0.8;
 }
+
 .logo{
   position: absolute;
   width: 470px;
@@ -107,14 +107,21 @@ h3{
   background-blend-mode: darken;
 }
 
-#posicion,
-#weak {
-  display: block;
-  text-align: center;
-  align-items: center;
+
+#pageTwo{
+  display: none;
 }
 
-#posicion{
+#selection{
+  display: inline-flex;
+}
+
+#type,
+#weak,
+#orderPosition {
+  display: inline-flex;
+  margin-top:10%;
+  margin-left: 9%;
   background-color:white;
   border-radius: 5px;
   border: none;
@@ -122,45 +129,22 @@ h3{
   margin: 100px 5px;
   width: 112px;
   height: 36px;
-  top: 650px;
-  font-size: 20px;
-  text-align: center;
-}
-
-#posicion:hover{
-  background-color: rgb(255, 208, 0.8);
-}
-
-#tipo{
-  background-color:white;
-  border-radius: 5px;
-  border: none;
-  color: black;
-  margin: 100px 5px;
-  width: 112px;
-  height: 36px;
-  top: 650px;
   font-size: 20px;
 }
 
-#tipo:hover{
+#type:hover{
   background-color: #0062C2;
 }
 
-.piedepagina{
-  position: absolute;
-  left: 650px;
-  top: 800px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  color: #898989;
-  clear: both;
+#weak:hover{
+  background-color: rgb(255, 208, 0.8);
 }
+
+#orderPosition:hover{
+  background-color: #0062C2;
+}
+
+
 /*#debilidad{
   display: none;
 }
@@ -168,19 +152,9 @@ h3{
   display: none;
 }*/
 
-#menuprincipal{
-  display: none;
-}
-
-#seleccinadores{
-  display: flex;
-  justify-content: flex-start;
-  top: 450px;
-}
-
 #root{
   display: none;
-  margin-top: -5%;
+  margin-top:-5%;
   margin-left: 9%;
   justify-content: center;
 }
@@ -230,6 +204,20 @@ h3{
   text-align: center;
 }
 
+.piedepagina{
+  position: absolute;
+  left: 650px;
+  top: 800px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  color: #898989;
+  clear: both;
+}
 
 /* Tamaño Celular */
 @media (max-width: 480px){
