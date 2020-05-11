@@ -11,92 +11,95 @@
 </head>
 
 <body>
+  <div class="padre">
+    <header class="banner">
+     <div class="menu">
+        <a href="index.html" ><img class="avatar" src="Img/PB.png"></a>
+      <img class="logo" src="Img/logo.png">
+     </div>
+    </header>
 
-  <header class="banner"></header>
-  <img class="logo" src="Img/logo.png">
-  <img class="avatar" src="Img/PB.png">
-
-  <!-- primera pagina -->
-  <div id="pageOne">
-    <div class="login-box" id="boxlogin"></div>
-    <h1>Bienvenido a la base de datos Pokemon GO de la primera generación, en la región de Kanto. </h1>
-    <h2>Descúbrela!</h2>
-    <button class="btn" id="enterButton">Ingresar</button>
-  </div>
-
-  <!-- segunda página -->
-  <div id= "pageTwo" >
-    <aside id="selections">
-
-      <!--filtro: buscar por tipo -->
-      <select id="type">
-        <option selected disabled>Tipos</option>
-        <option value="Fire">Fuego</option>
-        <option value="Water">Agua</option>
-        <option value="Grass">Planta</option>
-        <option value="Electric">Eléctrico</option>
-        <option value="Ice">Hielo</option>
-        <option value="Fighting">Lucha</option>
-        <option value="Poison">Veneno</option>
-        <option value="Ground">Tierra</option>
-        <option value="Flying">Volador</option>
-        <option value="Psychic">Psíquico</option>
-        <option value="Bug">Bicho</option>
-        <option value="Rock">Roca</option>
-        <option value="Ghost">Fantasma</option>
-        <option value="Dragon">Dragón</option>
-        <option value="Dark">Siniestro</option>
-        <option value="Steel">Acero</option>
-        <option value="Fairy">Hada</option>
-      </select>
-
-      <!--filtro: buscar por debilidad -->
-      <select id="weak">
-        <option selected disabled>Debilidades</option>
-        <option value="Fire">Fuego</option>
-        <option value="Water">Agua</option>
-        <option value="Grass">Planta</option>
-        <option value="Electric">Eléctrico</option>
-        <option value="Ice">Hielo</option>
-        <option value="Fighting">Lucha</option>
-        <option value="Poison">Veneno</option>
-        <option value="Ground">Tierra</option>
-        <option value="Flying">Volador</option>
-        <option value="Psychic">Psíquico</option>
-        <option value="Bug">Bicho</option>
-        <option value="Rock">Roca</option>
-        <option value="Ghost">Fantasma</option>
-        <option value="Dragon">Dragón</option>
-        <option value="Dark">Siniestro</option>
-        <option value="Steel">Acero</option>
-        <option value="Fairy">Hada</option>
-      </select>
-
-      <!--filtro: buscar por orden alfabeto -->
-      <select id="orderPosition">
-        <option selected disabled>Ordenar</option>
-        <option>Ascendente</option>
-        <option>Descendiente</option>
-      </select>
-    </aside>
-
-    <!--caja de texto: buscar por nombre de pokémon -->
-    <div class="col-2" id="searchingBox">
-      <input type="text" id="search" placeholder="Nombre de Pokémon">
-      <button class="col-2" id="okBtn">Ok</button>
+    <!-- primera pagina -->
+    <div id="pageOne">
+      <div class="login-box" id="boxlogin"></div>
+      <h1>Bienvenido a la base de datos Pokemon GO de la primera generación, en la región de Kanto. </h1>
+      <h2>Descúbrela!</h2>
+      <button class="btn" id="enterButton">Ingresar</button>
     </div>
 
+    <!-- segunda página -->
+    <div id= "pageTwo" >
+      <aside id="selections">
+        <div id="valor-desplegable">Mostrar por</div>
+        <!--filtro: buscar por tipo -->
+        <select id="type">
+          <option selected disabled>Tipos</option>
+          <option value="Fire">Fuego</option>
+          <option value="Water">Agua</option>
+          <option value="Grass">Planta</option>
+          <option value="Electric">Eléctrico</option>
+          <option value="Ice">Hielo</option>
+          <option value="Fighting">Lucha</option>
+          <option value="Poison">Veneno</option>
+          <option value="Ground">Tierra</option>
+          <option value="Flying">Volador</option>
+          <option value="Psychic">Psíquico</option>
+          <option value="Bug">Bicho</option>
+          <option value="Rock">Roca</option>
+          <option value="Ghost">Fantasma</option>
+          <option value="Dragon">Dragón</option>
+          <option value="Dark">Siniestro</option>
+          <option value="Steel">Acero</option>
+          <option value="Fairy">Hada</option>
+        </select>
+
+        <!--filtro: buscar por debilidad -->
+        <select id="weak">
+          <option selected disabled>Debilidades</option>
+          <option value="Fire">Fuego</option>
+          <option value="Water">Agua</option>
+          <option value="Grass">Planta</option>
+          <option value="Electric">Eléctrico</option>
+          <option value="Ice">Hielo</option>
+          <option value="Fighting">Lucha</option>
+          <option value="Poison">Veneno</option>
+          <option value="Ground">Tierra</option>
+          <option value="Flying">Volador</option>
+          <option value="Psychic">Psíquico</option>
+          <option value="Bug">Bicho</option>
+          <option value="Rock">Roca</option>
+          <option value="Ghost">Fantasma</option>
+          <option value="Dragon">Dragón</option>
+          <option value="Dark">Siniestro</option>
+          <option value="Steel">Acero</option>
+          <option value="Fairy">Hada</option>
+        </select>
+
+        <!--filtro: buscar por orden alfabeto -->
+        <select id="orderPosition">
+          <option selected disabled>Ordenar</option>
+          <option>Ascendente</option>
+          <option>Descendiente</option>
+        </select>
+
+        <!--caja de texto: buscar por nombre de pokémon -->
+        <div id="searchingBox">
+          <input type="text" id="search" placeholder="Nombre de Pokémon">
+          <button id="okBtn">Ok</button>
+        </div>
+
+      </aside>
+
+    </div>
+    <footer class="piedepagina">
+      <nav class="pie">Andrea Silva - Eiliana Aguilar .Copyright - Todo los derechos reservados</nav>
+    </footer>
+    <div id="root"></div>
+
+
     <script src="main.js" type="module"></script>
-    <footer class="piedepagina">Andrea Silva - Eiliana Aguilar. Copyright - Todo los derechos reservados</footer>
+    <script src="data.js" type="module"></script>
+    </div>
+  </body>
 
-  </div>
-  <div id="root"></div>
-  <footer class="piedepagina">
-    Andrea Silva - Eiliana Aguilar .Copyright - Todo los derechos reservados
-  </footer>
-
-  <script src="main.js" type="module"></script>
-  <script src="data.js" type="module"></script>
-</body>
-
-</html>
+  </html>

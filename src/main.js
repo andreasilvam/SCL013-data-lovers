@@ -70,7 +70,7 @@ typeUser.addEventListener("change", () => {
     //variable que me almacena el recorrido el valor del recorrido de la debilidades y todo lo que contiene adentro  de (type)
     let newPosition = positionType[i];
     //variable que contiene los valores a imprimir
-    let prinType = `<section id="tarjetas"><p> ${newPosition.name}<p><p> ${newPosition.num}<p><img src=${newPosition.img} class=foto></section>`
+    let prinType = `<section id="tarjetas"><p><img src=${newPosition.img} class=foto><p>${newPosition.num}.${newPosition.name}</section>`
     //se imprime llamando a la nueva variable según lo especificado en la variable anterior
     container.innerHTML += `<p>${prinType}<p>`
   }
@@ -95,7 +95,7 @@ orderPosition.addEventListener("change", () => {
     //variable que me almacena el recorrido el valor del recorrido hecho por el for
     let dataFilter = posicionFilter[i]
     //variable que contiene los valores a imprimir
-    let printPosition = `<section id="tarjetas"><p>Nombre ${dataFilter.name}<p><p>Numero ${dataFilter.num}<p><img src=${dataFilter.img} class=foto></section>`
+    let printPosition = `<section id="tarjetas"><p><img src=${dataFilter.img} class=foto><p>${dataFilter.num}.${dataFilter.name}</section>`
     //se imprime llamando a la nueva variable según lo especificado en la variable anterior
     container.innerHTML += `<p>${printPosition}<p>`
   }
@@ -118,7 +118,7 @@ document.getElementById('okBtn').addEventListener('click', () => {
     //variable que me almacena el valor del recorrido hecho por el for
     let dataName = chosenName[i]
     //variable que contiene los valores a imprimir
-    let printName = `<section id="tarjetas"><p>Nombre ${dataName.name}<p><p>Numero ${dataName.num}<p><img src=${dataName.img} class=foto></section>`
+    let printName = `<section id="tarjetas"><p><img src=${dataName.img} class=foto><p>${dataName.num}.${dataName.name}</section>`
     //se imprime llamando a la nueva variable según lo especificado en la variable anterior
     container.innerHTML += `<p>${printName}<p>`
   }

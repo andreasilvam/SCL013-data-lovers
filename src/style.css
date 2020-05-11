@@ -1,35 +1,74 @@
 *{
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
 }
-body{
-    background:url(Img/fondo.png);
-    /*define como se repiten los fondos del documento, en este caso no repetir*/
-    background-repeat: no-repeat;
-    /*Escala la imagen al mayor tamaño posible sin estirarla*/
-    background-size: cover;
-    /*determina si la imagen será fija dentro de la pantalla o se desplazará junto al bloque contenedor.*/
-    background-attachment: fixed;
-  }
 
-.banner {
-  position: absolute;
-  width: 14400px;
+body{
+  background:url(Img/fondo.png);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*define como se repiten los fondos del documento, en este caso no repetir
+  background-repeat: no-repeat;
+  /*Escala la imagen al mayor tamaño posible sin estirarla
+  background-size: cover;
+  /*determina si la imagen será fija dentro de la pantalla o se desplazará junto al bloque contenedor.
+  background-attachment: fixed;*/
+}
+
+.padre{
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.banner{
+  display: flex;
+  flex-flow: row nowrap;
+  width: 1349px;
   height: 100px;
-  left: calc(50% - 1400px/2);
-  top: 0%;
   background: rgba(255, 255, 255, 0.75);
-  opacity: 0.8;
+  border-bottom: 1px solid rgba(255, 255, 255, .5);
+}
+
+.menu{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+
+}
+
+.avatar {
+  flex: 1 1 auto;
+  position: absolute;
+  width: 85px;
+  height: 85px;
+  left: 7px;
+  top: 7px;
 }
 
 .logo{
+  flex: 1 1 auto;
   position: absolute;
   width: 470px;
   height: 100px;
   left: 440px;;
   top: 0px;
 }
+
+/*Página Uno*/
+.pageOne{
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
 .login-box {
+  display: flex;
+  align-items: center;
+  position: absolute;
+
   width: 350px;
   height: 300px;
   top: 55%;
@@ -37,23 +76,17 @@ body{
   position:absolute;
   transform: translate(-50%, -50%);
   background: #FFFFFF;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
 }
-.avatar {
-  position: absolute;
-  width: 85px;
-  height: 85px;
-  left: 17px;
-  top: 7px;
-}
+
 h1{
   position: absolute;
   width: 340px;
   height: 274px;
   left: calc(50% - 343px/2 - 0.5px);
   top: calc(60% - 274px/2 - 5px);
-  font-family: Alfa Slab One;
-  font-style: normal;
+  font-family: "Alfa Slab One";
   font-weight: normal;
   font-size: 25px;
   line-height: 30px;
@@ -61,29 +94,15 @@ h1{
   letter-spacing: 0.04em;
   color: #1B1B1B;
 }
+
 h2{
   position: absolute;
+  flex: 1 1 auto;
   width: 343px;
   height: 274px;
   left: calc(50% - 343px/2 - 0.5px);
   top: calc(80% - 274px/2 - 5px);
-  font-family: Alfa Slab One;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 28px;
-  line-height: 30px;
-  text-align: center;
-  letter-spacing: 0.04em;
-  color: #1B1B1B;
-}
-
-h3{
-  position: absolute;
-  width: 343px;
-  height: 274px;
-  left: calc(50% - 343px/2 - 0.5px);
-  top: calc(43% - 274px/2 - 5px);
-  font-family: fontAwesome;
+  font-family: "Alfa Slab One";
   font-style: normal;
   font-weight: normal;
   font-size: 28px;
@@ -94,7 +113,8 @@ h3{
 }
 
 .btn{
-  font-family: Alfa Slab One;
+  flex: 1 1 auto;
+  font-family: "Alfa Slab One";
   font-size: 15px;
   color: #555555;
   position: absolute;
@@ -107,29 +127,41 @@ h3{
   background-blend-mode: darken;
 }
 
-
+/*Página Dos*/
 #pageTwo{
   display: none;
+  flex-flow: column nowrap;
 }
 
-#selection{
-  display: inline-flex;
+#selections{
+  display: flex;
+  flex-flow: column nowrap;
+  width: 115px;
+
+  background: rgba(255, 255, 255, 0.75);
+  background-attachment: fixed;
 }
 
+#valor-desplegable,
 #type,
 #weak,
 #orderPosition {
+  text-align-last: center;
   display: inline-flex;
-  margin-top:10%;
-  margin-left: 9%;
+  flex: 1 1 auto;
+  align-items: center;
+  margin-top:5%;
   background-color:white;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   border: none;
   color: black;
-  margin: 100px 5px;
+  margin: 3px;
   width: 112px;
   height: 36px;
-  font-size: 20px;
+  font-family: "Josefin Sans";
+  font-size: 17px;
+  text-align: center;
 }
 
 #type:hover{
@@ -144,34 +176,34 @@ h3{
   background-color: #0062C2;
 }
 
-
-/*#debilidad{
-  display: none;
-}
-#posicion{
-  display: none;
-}*/
-
 #root{
   display: none;
-  margin-top:-5%;
-  margin-left: 9%;
+  flex-flow: row wrap;
+  width: 100%;
+  margin-top: -14%;
+  margin-left: 10%;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Josefin Sans";
+  text-transform: uppercase;
+  letter-spacing: 1px;
   justify-content: center;
 }
 
 .foto{
-  width: 75%;
-  height: 60%;
+  width: 100%;
+  height: 100%;
+  margin-top: -10%;
+  margin-left: 0%;
   justify-content: center;
   align-content: center;
 }
 
 #tarjetas{
   float: left;
-  width: 250px;
-  height: 250px;
-  right: 29px;
-  padding: 16px;
+  width: 170px;
+  height: 170px;
+  padding: 50px ;
   background: rgba(255, 255, 255, 0.85);
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
@@ -180,16 +212,12 @@ h3{
   margin-right: 1%;
 }
 
-#letras{
-  text-align: center;
-  font-size: 20;
-}
-
 #searchingBox{
+  display: none;
   position: absolute;
   width: 182px;
   height: 58px;
-  left: 1150px;
+  left: 1100px;
   top: 31px;
   font-style: normal;
 
@@ -197,7 +225,8 @@ h3{
 }
 
 #search, #okBtn{
-  border-radius: 5px;
+  flex: 1 1 auto;
+  border-radius: 10px;
   margin-top: 0px;
   font-size: 15px;
   height: 30px;
@@ -205,32 +234,29 @@ h3{
 }
 
 .piedepagina{
-  position: absolute;
-  left: 650px;
-  top: 800px;
-  display: flex;
-  align-items: center;
   text-align: center;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  color: #898989;
-  clear: both;
+  justify-content: center;
+  color:grey;
 }
 
-/* Tamaño Celular */
-@media (max-width: 480px){
-}
-
-/* Tamaño Tablet */
-@media (min-width: 481px),(max-width: 980px){
-  .root{
-    margin-right:50%;
+@media all and (max-width: 800px){
+  #header{
+    flex-direction: column;
+    height: 100%;
+  }
+  #selections{
+    justify-content: center;
   }
 }
 
-/* Tamaño PC */
-@media (min-width: 981px){
+@media all and (max-width: 600px){
+  #selections{
+    flex-direction: column;
+    height: 100%;
+
+  }
+}
+
+@media all and (max-width: 400px){
 
 }
