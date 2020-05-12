@@ -97,6 +97,9 @@ Luego de testar, recibir feedbacks de parte de distintos usuarios, compañeras y
 * Exportación del proyecto de Figma a Zeplin
 [Ver](https://zpl.io/aB0kdeQ)
 
+![prototipoFinal1](/prototipados/PF1.JPG)
+![prototipoFinal2](/prototipados/PF2.JPG)
+
 #### Testeos de usabilidad
 
 Durante el reto deberás hacer _tests_ de usabilidad con distintos usuarios, y
