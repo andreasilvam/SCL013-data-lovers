@@ -97,8 +97,8 @@ Luego de testar, recibir feedbacks de parte de distintos usuarios, compañeras y
 * Exportación del proyecto de Figma a Zeplin
 [Ver](https://zpl.io/aB0kdeQ)
 
-![prototipoFinal1](/prototipados/PF1.JPG)
-![prototipoFinal2](/prototipados/PF2.JPG)
+![prototipoFinal1](/prototipados/PF1.jpg)
+![prototipoFinal2](/prototipados/PF2.jpg)
 
 #### Testeos de usabilidad
 
