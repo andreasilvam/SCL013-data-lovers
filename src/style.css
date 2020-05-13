@@ -231,6 +231,40 @@ top: 580px;
 left: 500px;
   font-size:0.75rem;
 }
+/*acá inicia el estilo del modal*/
+.modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+ transform: scale(0);
+  transition: transform .3s;
+}
+
+.modal_content{
+background-color: #fff;
+width: 50vh;
+height: 20rem;
+padding: 3rem;
+}
+
+.modal--show{
+  transform: scale(1);
+}
+.foto{
+background-color: #fff;
+width: 20vh;
+height: 10rem;
+padding: 3rem;
+}
+/*Acá termina el estilo del modal*/
+
+
 
 @media all and (max-width: 800px){
 
