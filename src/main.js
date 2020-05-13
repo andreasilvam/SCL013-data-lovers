@@ -31,9 +31,55 @@ for (let i = 0; i < dataPokemon.length; i++) {
   // variable que almacena la data recorrida
   let pokemones = dataPokemon[i]
   //creando una variable que contiene los valores a imprimir
-  let imprimir = `<section id="tarjetas"><p><img src=${pokemones.img} class=foto><p>${pokemones.num}.${pokemones.name}<p></section></section>`
+  let imprimir = `<section id="tarjetas">
+  <img id="${pokemones.name}" src=${pokemones.img} class=foto>
+  <p>${pokemones.num}.${pokemones.name}<p>
+  </section>`
   //se imprime llamando a la nueva variable según lo especificado en la variable anterior
   container.innerHTML += `<p>${imprimir}<p>`
+}
+
+/////Modal/////
+
+const modal = document.getElementById("modal");
+const foto = document.getElementsByClassName("foto");
+//console.log("Foto", foto)
+//foto.addEventListener ('click',modalImpri)
+for (let i = 0; i < foto.length; i++) {
+  let img = foto[i];
+  img.addEventListener('click', modalImpri)
+  //console.log("imprimir", img)
+}
+
+function modalImpri(event) {
+  modal.innerHTML ="";
+  //console.log("identificarlo", event.target)
+  const pokemonEncotrado = dataPokemon.find(function (personaje) {
+    return personaje.name === event.target.id
+    })
+    //console.log("Hola", pokemonEncotrado)
+
+  modal.innerHTML +=
+    `<section id="tarjetas">
+        <section id="letras">
+          <p>Número: ${pokemonEncotrado.num}<p>
+          <p>Nombre de Pokemón: ${pokemonEncotrado.name}<p>
+          <p>Peso: ${pokemonEncotrado.weight}<p>
+          <p>Altura: ${pokemonEncotrado.height}<p>
+          <p>Tipo: ${pokemonEncotrado.type}<p>
+          <p>Debilidades: ${pokemonEncotrado.weaknesses}<p>
+          <p>Caramelos: ${pokemonEncotrado.candy}<p>
+          <p>Cantidad de caramelos: ${pokemonEncotrado.candy_count}<p>
+          <p>Huevo: ${pokemonEncotrado.egg}<p>
+          <img src=${pokemonEncotrado.img} class="foto">
+         </section>
+     </section>`
+    modal.classList.add('modal--show')
+
+  modal.addEventListener('click', (e) => {
+    if (e.target.classList.contains('modal')) modal.classList.remove('modal--show')
+
+  });
 }
 
 
@@ -54,10 +100,23 @@ weakUser.addEventListener("change", () => {
     //variable que me almacena el atriburo debilidad y todo lo que contiene adentro  de (weaknesses)
     let dataWeak = positionWeak[i];
     //variable que contiene los valores a imprimir
-    let printWeak = `<section id="tarjetas"><p><img src=${dataWeak.img} class=foto><p>${dataWeak.num}.${dataWeak.name}</section>`
+    let printWeak = 
+    `<section id="tarjetas">
+    <img id="${dataWeak.name}" src=${dataWeak.img} class=foto>
+    <p>${dataWeak.num}.${dataWeak.name}<p>
+    <p>${dataWeak.type}<p>
+    </section>`
     //se imprime llamando a la nueva variable según lo especificado en la variable anterior
     container.innerHTML += `<p>${printWeak}<p>`
   }
+  //for que recorre la class foto de mi línea de impresión
+  for (let i = 0; i < foto.length; i++) {
+    let img = foto[i];
+    img.addEventListener('click', modalImpri)
+    //console.log("imprimir", img)
+  }
+  //se llama a la función modal
+  modalImpri
 });
 
 
@@ -78,10 +137,22 @@ typeUser.addEventListener("change", () => {
     //variable que me almacena el recorrido el valor del recorrido de la debilidades y todo lo que contiene adentro  de (type)
     let newPosition = positionType[i];
     //variable que contiene los valores a imprimir
-    let prinType = `<section id="tarjetas"><p><img src=${newPosition.img} class=foto><p>${newPosition.num}.${newPosition.name}</section>`
+    let prinType = 
+    `<section id="tarjetas">
+    <img id="${newPosition.name}"src=${newPosition.img} class=foto>
+    <p>${newPosition.num}.${newPosition.name}<p>
+    </section>`
     //se imprime llamando a la nueva variable según lo especificado en la variable anterior
     container.innerHTML += `<p>${prinType}<p>`
   }
+  //For que recorre la clase  foto de mi linea de impresión
+  for (let i = 0; i < foto.length; i++) {
+    let img = foto[i];
+    img.addEventListener('click', modalImpri)
+   // console.log("imprimir", img)
+  }
+  //se trae la función modal
+  modalImpri
 });
 
 
@@ -103,10 +174,21 @@ orderPosition.addEventListener("change", () => {
     //variable que me almacena el recorrido el valor del recorrido hecho por el for
     let dataFilter = posicionFilter[i]
     //variable que contiene los valores a imprimir
-    let printPosition = `<section id="tarjetas"><p><img src=${dataFilter.img} class=foto><p>${dataFilter.num}.${dataFilter.name}</section>`
+    let printPosition = `<section id="tarjetas">
+    <img id="${dataFilter.name}"src=${dataFilter.img} class=foto>
+    <p>${dataFilter.num}.${dataFilter.name}<p>
+    </section>`
     //se imprime llamando a la nueva variable según lo especificado en la variable anterior
     container.innerHTML += `<p>${printPosition}<p>`
   }
+  //For que recorre la clase  foto de mi linea de impresión
+  for (let i = 0; i < foto.length; i++) {
+    let img = foto[i];
+    img.addEventListener('click', modalImpri)
+   // console.log("imprimir", img)
+  }
+  //se trae la función modal
+  modalImpri
 });
 
 
@@ -126,8 +208,20 @@ document.getElementById('okBtn').addEventListener('click', () => {
     //variable que me almacena el valor del recorrido hecho por el for
     let dataName = chosenName[i]
     //variable que contiene los valores a imprimir
-    let printName = `<section id="tarjetas"><p><img src=${dataName.img} class=foto><p>${dataName.num}.${dataName.name}</section>`
+    let printName =
+    `<section id="tarjetas">
+    <img id="${dataName.name}" src=${dataName.img} class=foto>
+    <p>${dataName.num}.${dataName.name}<p>
+    </section>`
     //se imprime llamando a la nueva variable según lo especificado en la variable anterior
     container.innerHTML += `<p>${printName}<p>`
   }
+    //For que recorre la clase  foto de mi linea de impresión
+    for (let i = 0; i < foto.length; i++) {
+      let img = foto[i];
+      img.addEventListener('click', modalImpri)
+     // console.log("imprimir", img)
+    }
+    //se trae la función modal
+    modalImpri
 });

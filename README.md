@@ -2,7 +2,7 @@
 # Data Lovers
 
 ## Índice
-pueba
+
 * [Definición del producto](#1-definición-del-producto)
 * [Historias de usuario](#2-historias-de-usuario)
 * [Diseño de la Interfaz de Usuario](#3-Diseño-de-la-Interfaz-de-Usuario)
