@@ -1,8 +1,8 @@
 //exportando las función de filtar por debilidad
 //se fijan los parámetros de la función
-export const filterWeak = (data, property, selecetWeak) => {
+export const filterWeak = (data, property, selectWeak) => {
   //console.log("datajs", data);
-  //console.log ("datass", selecetWeak)
+  //console.log ("datass", selectWeak)
   ///se declara una constante tipo array
   const tarjeta = [];
   //for me recorrerá la data de proyecto
@@ -11,7 +11,7 @@ export const filterWeak = (data, property, selecetWeak) => {
     for (let a = 0; a < data[i][property].length; a++) {
       //console.log ("hola",dataType[d]);
       //condicional que igual lo encotrado en el atributo el array y lo iguala a la opcién elegida por el usuario
-      if (data[i][property][a] === selecetWeak) {
+      if (data[i][property][a] === selectWeak) {
 
         //se llama a la constante tipo array declarada al incio y una vez recorrida la longitud de la data
        // se hace un push para alamcene todos los elementos los devuelve la nueva longitud del array.
@@ -48,11 +48,11 @@ export const filterType = (data, property, selectType) => {
 export const filterPosition = (data, selectPosition) => {
   let newFilter = data.sort((ascen, desce) => {
     if (selectPosition === "Ascendente") {
-      return (ascen.num < desce.num) ? -1 : 1;
+      return (ascen.num < desce.num) ? -1 : 1; //si condicion es verdadera toma el valor del valor primero, de lo contrario tomara el segundo
     }
 
     else {
-      return (ascen.num > desce.num) ? -1 : 1;
+      return (ascen.num > desce.num) ? -1 : 1; //formula de sort
     }
   })
   //console.log(newFilter)

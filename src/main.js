@@ -14,6 +14,14 @@ function enterbtn() {
   document.getElementById("root").style.display = "block";//mostrar
 }
 
+document.getElementById("avatar").addEventListener("click", toPage);
+
+function toPage() {
+  document.getElementById("root").style.display = "none"; //esconder
+  document.getElementById("pageTwo").style.display = "none"; //motrar
+  document.getElementById("pageOne").style.display = "block";//mostrar
+}
+
 ///////imprimiendo los personajes en la segunda página luego del evento click ////
 
 // constante que contiene información del atributo ID donde se va a imprimir en el html
