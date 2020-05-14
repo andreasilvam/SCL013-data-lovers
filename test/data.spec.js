@@ -1,4 +1,5 @@
-import { filterType, filterWeak } from '../src/data.js'
+import { filterPosition, filterType, filterWeak, nameSearch } from '../src/data.js'
+
 //test de filtrado por tipo///
 const typePoke = [{
   "name": "Bulbasaur",
@@ -23,7 +24,6 @@ describe('filterType', () => {
 });
 
 ///Test de debilidad ///
-
 const weakPoke = [{
   "name": "Venusaur",
 
@@ -42,36 +42,75 @@ describe('filterWeak', () => {
       "name": "Venusaur",
       "weaknesses": [
         "Fire",
-             ]
+      ]
     }]);
   });
 });
 
+///Test de posicion ///
+const positionPoke = [{
+  "num": "001",
+  "name": "Bulbasaur"},
+  {"num": "002",
+  "name": "Ivysaur"},
+  {  "num": "003",
+  "name": "Venusaur"},
+  {"num": "004",
+  "name": "Charmander"}
+];
 
-
-
-
-/*import { example, anotherExample } from '../src/data.js';
-
-
-describe('example', () => {
+describe('filterPosition', () => {
   test('is a function', () => {
-    expect(typeof example).toBe('function');
+    expect(typeof filterPosition).toBe('function');
   });
 
-  test('returns `example`', () => {
-    expect(example()).toBe('example');
-  });
+  test('should return "001" for filter "num"', () => {
+    expect(filterPosition(positionPoke, "num", "001")).toEqual(positionPoke);
+});
 });
 
+///Test de buscar nombre ///
+const namePoke = [{
+  "name": "Bulbasaur"}];
 
-describe('anotherExample', () => {
+describe('nameSearch', () => {
   test('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
+    expect(typeof nameSearch).toBe('function');
   });
 
-  test('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
-  });
-});*/
+  test('should return "Bulbasaur" for filter "name"', () => {
+    expect(nameSearch(namePoke, "Bulbasaur")).toEqual(namePoke);
+});
+});
 
+///Test de posicion ///
+
+describe('filterPosition', () => {
+  it('is a function', () => {
+    expect(typeof filterPosition).toBe('function');
+  });
+
+  it('should return "004" for filter "num"', () => {
+    const positionAsce = [{
+      "num": "001",
+      "name": "Bulbasaur"},
+      {"num": "002",
+      "name": "Ivysaur"},
+      {  "num": "003",
+      "name": "Venusaur"},
+      {"num": "004",
+      "name": "Charmander"}
+    ];
+    const positionDesce = [{
+      "num": "004",
+      "name": "Charmander"},
+      {"num": "003",
+      "name": "Venusaur"},
+      {  "num": "002",
+      "name": "Ivysaur"},
+      {"num": "001",
+      "name": "Bulbasaur"}
+    ];
+    expect(filterPosition(positionAsce))===(positionDesce);
+});
+});
