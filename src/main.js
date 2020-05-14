@@ -60,8 +60,9 @@ function modalImpri(event) {
     //console.log("Hola", pokemonEncotrado)
 
   modal.innerHTML +=
-    `<section id="tarjetas">
+    `<section id="cards">
         <section id="letras">
+        <img src=${pokemonEncotrado.img} class="foto">
           <p>Número: ${pokemonEncotrado.num}<p>
           <p>Nombre de Pokemón: ${pokemonEncotrado.name}<p>
           <p>Peso: ${pokemonEncotrado.weight}<p>
@@ -71,7 +72,7 @@ function modalImpri(event) {
           <p>Caramelos: ${pokemonEncotrado.candy}<p>
           <p>Cantidad de caramelos: ${pokemonEncotrado.candy_count}<p>
           <p>Huevo: ${pokemonEncotrado.egg}<p>
-          <img src=${pokemonEncotrado.img} class="foto">
+
          </section>
      </section>`
     modal.classList.add('modal--show')
@@ -100,7 +101,7 @@ weakUser.addEventListener("change", () => {
     //variable que me almacena el atriburo debilidad y todo lo que contiene adentro  de (weaknesses)
     let dataWeak = positionWeak[i];
     //variable que contiene los valores a imprimir
-    let printWeak = 
+    let printWeak =
     `<section id="tarjetas">
     <img id="${dataWeak.name}" src=${dataWeak.img} class=foto>
     <p>${dataWeak.num}.${dataWeak.name}<p>
@@ -137,7 +138,7 @@ typeUser.addEventListener("change", () => {
     //variable que me almacena el recorrido el valor del recorrido de la debilidades y todo lo que contiene adentro  de (type)
     let newPosition = positionType[i];
     //variable que contiene los valores a imprimir
-    let prinType = 
+    let prinType =
     `<section id="tarjetas">
     <img id="${newPosition.name}"src=${newPosition.img} class=foto>
     <p>${newPosition.num}.${newPosition.name}<p>

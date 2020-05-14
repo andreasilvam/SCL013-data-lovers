@@ -74,6 +74,8 @@ Aparece el listado de imagenes de todos los pokemones ordenados por numero. En l
 
 #### Diagrama de flujo y prototipo en papel y lápiz
 
+Realizamos el diagrama de flujo para identificar las funciones de la web, y luego el sketch del prototipo.
+
 ![diagramaDeFlujo](/prototipados/diagramaFlujo.JPG)
 ![prototipo1](/prototipados/P1.JPG)
 ![prototipo2](/prototipados/P2.JPG)
@@ -86,6 +88,9 @@ Aparece el listado de imagenes de todos los pokemones ordenados por numero. En l
 ![prototipoBF3](/prototipados/PBF3.jpg)
 ![prototipoBF4](/prototipados/PBF4.jpg)
 ![prototipoBF5](/prototipados/PBF5.jpg)
+
+* Prototipo de baja fidelidad en InVision
+[Ver](https://andrea375124.invisionapp.com/overview/POKEMON-ck9a1cm6a0j8g01b6tfqilkgz/screens?v=8y9wZJtAKo4dfldtAoUdoA%3D%3D&linkshare=urlcopied)
 
 #### Prototipo de alta fidelidad
 
@@ -104,19 +109,38 @@ Luego de testar, recibir feedbacks de parte de distintos usuarios, compañeras y
 
 #### Testeos de usabilidad
 
-Durante el reto deberás hacer _tests_ de usabilidad con distintos usuarios, y
-en base a los resultados, deberás iterar tus diseños. Cuéntanos
-qué problemas de usabilidad detectaste a través de los _tests_ y cómo los
-mejoraste en tu propuesta final.
+Exportamos nuestro prototipo al Maze el cual nos arrojo los siquientes resultados por usuario:
 
-### Implementación de la Interfaz de Usuario (HTML/CSS/JS)
+![testMaze1](/prototipados/maze1.jpg)
+Acá podemos ver que el puntaje de usabilidad de nuestro prototipo es de un 77% entre 4 usuarios que realizaron este test, y 9 bloqueos en las misiones.
 
-1. Mostrar la data en una interfaz: puede ser un card, una tabla, una lista,
-   etc.
-2. Permitir al usuario interactuar para obtener la infomación que necesita.
-3. Ser _responsive_, es decir, debe visualizarse sin problemas desde distintos
-   tamaños de pantallas: móviles, tablets y desktops.
-4. Que la interfaz siga los fundamentos de _visual design_.
+![testMaze2](/prototipados/maze2.jpg)
+Acá, si bien el puntaje resultó de un 78%, la tasa de click errónes fue de un 12%.
+
+![testMaze3](/prototipados/maze3.jpg)
+Acá, el puntaje resultó de un 45%, ya que los click errónes fue de un 25%, aunque se cumplió la misión. Este error nos hizo replantearnos la columna del menú "mostrar" y la dejaremos fija.
+
+![testMaze4](/prototipados/maze4.jpg)
+Acá, el puntaje resultó de un 96%, solo hubo una demora en el tiempo del click.
+
+![testMaze5](/prototipados/maze5.jpg)
+Puntaje 100%
+
+![testMaze6](/prototipados/maze6.jpg)
+Acá, el puntaje resultó de un 83%, ya que un usuario hizo click en otra parte que lo llevaba a otro lado.
+
+![testMaze7](/prototipados/maze7.jpg)
+Un 67% se sintió bien realizando la tarea, y un 33% súper bien.
+
+![testMaze8](/prototipados/maze8.jpg)
+Con estos comentarios recibidos mas nuestro feedback según los resultados obtenidos a traves del testeo, pudimos realizar nuestro producto final.
+
+### Producto finalizado
+
+Con estos comentarios recibidos mas nuestro feedback según los resultados obtenidos a traves del testeo, pudimos realizar nuestro producto final.
+
+* Producto final
+[Ver](https://andreasilvam.github.io/SCL013-data-lovers/src/index.html)
 
 ### Pruebas unitarias
 
