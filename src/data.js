@@ -59,10 +59,17 @@ export const filterPosition = (data, selectPosition) => {
   return newFilter
 }
 
-// exportando la función buscar por nombre de pokémon
+/* exportando la función buscar por nombre de pokémon
 export const nameSearch = (dataPokemon,finalName) => {
   const searched = dataPokemon.filter((element) => {
     return element.name.includes(finalName);
   });
   return searched;
-};
+};*/
+
+export const nameSearch = (data,text) =>{
+  const search = data.filter((element) => {
+    return element.name.includes(text);
+  });
+  return search;
+}

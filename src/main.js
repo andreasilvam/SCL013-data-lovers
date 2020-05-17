@@ -226,3 +226,5 @@ document.getElementById('okBtn').addEventListener('click', () => {
     //se trae la función modal
     modalImpri
 });
+
+

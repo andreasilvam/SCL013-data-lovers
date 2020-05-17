@@ -12,11 +12,11 @@
 
 <body>
   <div id="padre">
-    <div class="header">
+
     <!-- cabecera fija de la página -->
     <div class="banner">
-      <a href="index.html"><img id="avatar" src="Img/PB.png"></a>
-        <img id="logo" class="logo" src="Img/logo.png"><!--</img>-->
+      <img id="avatar" src="Img/PB.png">
+      <img class="logo" src="Img/logo.png">
     </div>
 
     <!-- primera pagina -->
@@ -26,90 +26,86 @@
       <h2>Descúbrela!</h2>
       <button class="btn" id="enterButton">Ingresar</button>
     </div>
-  </div>
-  </div>
-
-
-
-  <!-- segunda página -->
-  <div id= "pageTwo" >
-    <aside id="selections">
-      <div id="valor-desplegable">Mostrar por</div>
-      <!--filtro: buscar por tipo -->
-      <select id="type">
-        <option selected disabled>Tipos</option>
-        <option value="Fire">Fuego</option>
-        <option value="Water">Agua</option>
-        <option value="Grass">Planta</option>
-        <option value="Electric">Eléctrico</option>
-        <option value="Ice">Hielo</option>
-        <option value="Fighting">Lucha</option>
-        <option value="Poison">Veneno</option>
-        <option value="Ground">Tierra</option>
-        <option value="Flying">Volador</option>
-        <option value="Psychic">Psíquico</option>
-        <option value="Bug">Bicho</option>
-        <option value="Rock">Roca</option>
-        <option value="Ghost">Fantasma</option>
-        <option value="Dragon">Dragón</option>
-        <option value="Dark">Siniestro</option>
-        <option value="Steel">Acero</option>
-        <option value="Fairy">Hada</option>
-      </select>
-
-      <!--filtro: buscar por debilidad -->
-      <select id="weak">
-        <option selected disabled>Debilidades</option>
-        <option value="Fire">Fuego</option>
-        <option value="Water">Agua</option>
-        <option value="Grass">Planta</option>
-        <option value="Electric">Eléctrico</option>
-        <option value="Ice">Hielo</option>
-        <option value="Fighting">Lucha</option>
-        <option value="Poison">Veneno</option>
-        <option value="Ground">Tierra</option>
-        <option value="Flying">Volador</option>
-        <option value="Psychic">Psíquico</option>
-        <option value="Bug">Bicho</option>
-        <option value="Rock">Roca</option>
-        <option value="Ghost">Fantasma</option>
-        <option value="Dragon">Dragón</option>
-        <option value="Dark">Siniestro</option>
-        <option value="Steel">Acero</option>
-        <option value="Fairy">Hada</option>
-      </select>
-
-      <!--filtro: buscar por orden alfabeto -->
-      <select id="orderPosition">
-        <option selected disabled>Ordenar</option>
-        <option>Ascendente</option>
-        <option>Descendiente</option>
-      </select>
-
-      <!--caja de texto: buscar por nombre de pokémon -->
-      <div id="searchingBox">
-        <input type="text" id="search" placeholder="Nombre de Pokémon">
-        <button id="okBtn">Ok</button>
-      </div>
-
-    </aside>
 
   </div>
 
-  <!-- Modal-->
+    <!-- segunda página -->
+    <div id= "pageTwo" >
 
-  <div id="modal" class="modal">
-    <div id="foto1" class="foto"></div>
-    <div class="modal_content"> </div>
+      <aside id="selections">
+        <div id="valor-desplegable">Mostrar por</div>
+        <!--filtro: buscar por tipo -->
+        <select id="type">
+          <option selected disabled>Tipos</option>
+          <option value="Fire">Fuego</option>
+          <option value="Water">Agua</option>
+          <option value="Grass">Planta</option>
+          <option value="Electric">Eléctrico</option>
+          <option value="Ice">Hielo</option>
+          <option value="Fighting">Lucha</option>
+          <option value="Poison">Veneno</option>
+          <option value="Ground">Tierra</option>
+          <option value="Flying">Volador</option>
+          <option value="Psychic">Psíquico</option>
+          <option value="Bug">Bicho</option>
+          <option value="Rock">Roca</option>
+          <option value="Ghost">Fantasma</option>
+          <option value="Dragon">Dragón</option>
+          <option value="Dark">Siniestro</option>
+          <option value="Steel">Acero</option>
+          <option value="Fairy">Hada</option>
+        </select>
+
+        <!--filtro: buscar por debilidad -->
+        <select id="weak">
+          <option selected disabled>Debilidades</option>
+          <option value="Fire">Fuego</option>
+          <option value="Water">Agua</option>
+          <option value="Grass">Planta</option>
+          <option value="Electric">Eléctrico</option>
+          <option value="Ice">Hielo</option>
+          <option value="Fighting">Lucha</option>
+          <option value="Poison">Veneno</option>
+          <option value="Ground">Tierra</option>
+          <option value="Flying">Volador</option>
+          <option value="Psychic">Psíquico</option>
+          <option value="Bug">Bicho</option>
+          <option value="Rock">Roca</option>
+          <option value="Ghost">Fantasma</option>
+          <option value="Dragon">Dragón</option>
+          <option value="Dark">Siniestro</option>
+          <option value="Steel">Acero</option>
+          <option value="Fairy">Hada</option>
+        </select>
+
+        <!--filtro: buscar por orden alfabeto -->
+        <select id="orderPosition">
+          <option selected disabled>Ordenar</option>
+          <option>Ascendente</option>
+          <option>Descendiente</option>
+        </select>
+
+        <!--caja de texto: buscar por nombre de pokémon -->
+        <div id="searchingBox">
+          <input type="text" id="search" placeholder="Nombre de Pokémon">
+          <button id="okBtn">Ok</button>
+        </div>
+
+      </aside>
+
+
+    <!-- Modal-->
+    <div id="modal" class="modal">
+      <div id="foto1" class="foto"></div>
+      <div class="modal_content"> </div>
+    </div>
+    <!-- Modal-->
+
+    <div id="root"></div>
   </div>
-  <!-- Modal-->
-
-
-  <div id="root"></div>
-
-  <footer id="footer">
-  Andrea Silva - Eiliana Anguilar © Copyright | 2020. Todos los derechos reservados.
-</footer>
+  <!--<footer id="footer">
+    <p>Andrea Silva - Eiliana Anguilar © Copyright | 2020. Todos los derechos reservados.</p>
+  </footer>-->
 
   <script src="main.js" type="module"></script>
   <script src="data.js" type="module"></script>
