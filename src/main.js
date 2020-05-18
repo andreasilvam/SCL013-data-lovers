@@ -36,7 +36,7 @@ for (let i = 0; i < dataPokemon.length; i++) {
   <p>${pokemones.num}.${pokemones.name}<p>
   </section>`
   //se imprime llamando a la nueva variable según lo especificado en la variable anterior
-  container.innerHTML += `<p>${imprimir}<p>`
+  container.innerHTML += imprimir
 }
 
 /////Modal/////
@@ -108,7 +108,7 @@ weakUser.addEventListener("change", () => {
     <p>${dataWeak.type}<p>
     </section>`
     //se imprime llamando a la nueva variable según lo especificado en la variable anterior
-    container.innerHTML += `<p>${printWeak}<p>`
+    container.innerHTML += printWeak
   }
   //for que recorre la class foto de mi línea de impresión
   for (let i = 0; i < foto.length; i++) {
@@ -226,5 +226,3 @@ document.getElementById('okBtn').addEventListener('click', () => {
     //se trae la función modal
     modalImpri
 });
-
-

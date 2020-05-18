@@ -328,11 +328,7 @@ h2{
     align-items: center;
   }
 
-  #searchingBox{
-    display: none;
-  }
-
-  .modal{
+    .modal{
     margin-left: 0px;
   }
 
@@ -378,4 +374,16 @@ h2{
   .modal{
     margin-left: 0px;
   }
+
+  .modal{
+    position: fixed;
+    top: 5px;
+    left: 0;
+    width: 50vh;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+
+  }
+
 }

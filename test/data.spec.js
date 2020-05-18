@@ -36,28 +36,6 @@ describe('filterWeak', () => {
   });
 });
 
-///Test de posicion ///
-const positionPoke = [{
-  "num": "001",
-  "name": "Bulbasaur"},
-  {"num": "002",
-  "name": "Ivysaur"},
-  {  "num": "003",
-  "name": "Venusaur"},
-  {"num": "004",
-  "name": "Charmander"}
-];
-
-describe('filterPosition', () => {
-  test('is a function', () => {
-    expect(typeof filterPosition).toBe('function');
-  });
-
-  test('should return "001" for filter "num"', () => {
-    expect(filterPosition(positionPoke, "num", "001")).toEqual(positionPoke);
-});
-});
-
 ///Test de buscar nombre ///
 const namePoke = [{
   "name": "Bulbasaur"}];
@@ -74,7 +52,7 @@ describe('nameSearch', () => {
 
 ///Test de posicion ///
 
-/*describe('filterPosition', () => {
+describe('filterPosition', () => {
   it('is a function', () => {
     expect(typeof filterPosition).toBe('function');
   });
@@ -101,5 +79,28 @@ describe('nameSearch', () => {
       "name": "Bulbasaur"}
     ];
     expect(filterPosition(positionAsce))===(positionDesce);
+});
+});
+
+
+/*//Test de posicion//
+const positionPoke = [{
+  "num": "001",
+  "name": "Bulbasaur"},
+  {"num": "002",
+  "name": "Ivysaur"},
+  {  "num": "003",
+  "name": "Venusaur"},
+  {"num": "004",
+  "name": "Charmander"}
+];
+
+describe('filterPosition', () => {
+  test('is a function', () => {
+    expect(typeof filterPosition).toBe('function');
+  });
+
+  test('should return "001" for filter "num"', () => {
+    expect(filterPosition(positionPoke, "num", "001")).toEqual(positionPoke);
 });
 });*/
